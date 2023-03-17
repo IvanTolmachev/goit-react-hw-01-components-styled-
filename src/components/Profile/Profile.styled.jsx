@@ -1,4 +1,6 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
   margin-top: 50px;
   width: 300px;
   border-radius: 5px;
@@ -6,67 +8,62 @@
   background-color: #ffffff;
   box-shadow: 0px 8px 20px rgba(28, 28, 30, 0.5),
     0px 4px 10px rgba(255, 255, 255, 0.1);
-}
+`;
 
-.description {
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
   margin-bottom: 40px;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   margin-top: 35px;
   margin-bottom: 35px;
   height: 120px;
   width: 120px;
   border-radius: 50%;
   background-color: rgb(229, 229, 229);
-}
-.name {
-  margin-bottom: 10px;
+`;
+
+export const UserName = styled.p`
   font-weight: 700;
   font-size: 20px;
-}
-.tag {
-  margin-bottom: 10px;
+`;
+export const TagLocation = styled.p`
+  margin-top: 10px;
   font-weight: 500;
   font-size: 16px;
   color: darkgrey;
-}
-.location {
-  font-weight: 500;
-  font-size: 16px;
-  color: darkgrey;
-}
+`;
 
-.stats {
+export const Stats = styled.ul`
   display: flex;
   border-top: 1px solid rgb(191, 191, 191);
   height: 80px;
   background-color: rgb(229, 229, 229);
-}
+`;
 
-.stats li {
+export const ItemStats = styled.li`
   width: calc(100% / 3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+  :not(:last-child) {
+    border-right: 1px solid rgb(191, 191, 191);
+  }
+`;
 
-.stats li:not(:last-child) {
-  border-right: 1px solid rgb(191, 191, 191);
-}
-
-.label {
+export const Label = styled.span`
   color: darkgrey;
   font-weight: 400;
   font-size: 15px;
   margin-bottom: 5px;
-}
-.quantity {
+`;
+
+export const Quantity = styled.span`
   font-weight: 700;
   font-size: 20px;
-}
+`;
