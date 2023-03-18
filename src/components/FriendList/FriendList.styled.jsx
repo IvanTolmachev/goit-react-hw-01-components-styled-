@@ -24,11 +24,13 @@ export const StatsLabel = styled.span`
   height: 15px;
   margin-right: 15px;
 
-  ${props => {
-    if (props.stats) {
-      return 'background-color: green';
-    } else return 'background-color: red';
-  }};
+  ${
+    props => (props.stats ? `background-color: green` : `background-color: red`)
+
+    // if (props.stats) {
+    //   return 'background-color: green';
+    // } else return 'background-color: red';
+  };
 `;
 
 export const Avatar = styled.img`
